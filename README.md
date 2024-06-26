@@ -64,3 +64,24 @@ Next, install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the provided installati
 </p>
 <br />
 
+<p>
+<img src="https://github.com/Joanrpena/osticket-prereqs/assets/131486928/336a2f52-01d0-40d8-b16e-16b4eed24e7a" height="75%" width="75%"
+/>
+<img src="https://github.com/Joanrpena/osticket-prereqs/assets/131486928/22afa747-18c5-4455-aa75-3e269ea43cf6" height="75%" width="75%"
+/>
+<img src="https://github.com/Joanrpena/osticket-prereqs/assets/131486928/5d96c8be-a620-4769-a42a-8be7e656c4bd" height="75%" width="75%"
+  />
+</p>
+<p>
+Before installing osTicket, IIS has to be configured. Type "IIS" in the search bar, right click IIS Manager and run as administrator. Select PHP Manager > Register new PHP Version > Click "..." to browse to the PHP folder created in the C: drive earlier > Click on "php-cgi.exe" and press Ok. After registering the PHP version, reload the server in the management console by right clicking on the host name under Connections panel on the left and stop/start the server.
+</p>
+<br />
+
+<p>
+<img src="https://github.com/Joanrpena/osticket-prereqs/assets/131486928/409f8412-dcce-46c4-8858-cc946eb991ee" height= "85%" width="85%" />
+</p>
+<p>
+Next, open the osTicket v1.15.8 folder provided in the installation files. Right click on the "upload" folder, and press Copy. On the search bar type: "c:\inetpub\wwwroot" and open up the wwwroot folder. Right click paste on the wwwroot folder. Still in the wwwroot folder, right click on the pasted upload folder and rename it to "osTicket". Reload the IIS Server.
+</p>
+<br />
+
