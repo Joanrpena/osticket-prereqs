@@ -20,7 +20,7 @@ In this lab, I will install osTicket from scratch using the required installatio
 <h2>Installation Steps</h2>
 
 <p>
-<img src=https://github.com/Joanrpena/osticket-prereqs/assets/131486928/63f15979-39ce-401a-9a26-674146731fcd/>
+<img src=https://github.com/Joanrpena/osticket-prereqs/assets/131486928/63f15979-39ce-401a-9a26-674146731fcd height="85%" width="85%"/>
 </p>
 <p>
 Before installing any files, Internet Information Services (IIS) must be enabled for osTicket to be properly configured. To enable IIS, open up the Control Panel > click on Programs > Turn Windows features on or off. Within the following window, scroll down and enable "Internet Information Services" > enable expand Web Management Tools and confirm IIS Management Console is enabled > expand World Wide Web Services > expand Application Development Features > enable CGI and click OK to confirm.
@@ -28,10 +28,39 @@ Before installing any files, Internet Information Services (IIS) must be enabled
 <br />
 
 <p>
-  <img src=https://github.com/Joanrpena/osticket-prereqs/assets/131486928/360c6525-d340-4212-9f9a-c46b4e5a908e/>
+  <img src=https://github.com/Joanrpena/osticket-prereqs/assets/131486928/360c6525-d340-4212-9f9a-c46b4e5a908e height="85%" width="85%"/>
 </p>
 <p>
   After IIS is enabled, open the installation files folder provided at the beginning section <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">here</a>, and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) followed by installing Rewrite Module (rewrite_amd64_en-US.msi) 
 </p>
-
 <br />
+
+<p>
+<img src="https://github.com/Joanrpena/osticket-prereqs/assets/131486928/c557e363-199a-4656-a803-9e9b1461b083" height="85%" width="85%" />
+</p>
+<p>
+Create a new folder called "PHP" on the Windows (C:) drive. This folder is where the contents from the PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) files will be unzipped. You can right click the file > Select "Extract All" > click "Browse" and browse to C:\PHP to extract the contents.
+</p>
+<br />
+
+<p>
+<img src="https://github.com/Joanrpena/osticket-prereqs/assets/131486928/7338a3c6-9e21-4a2c-bdcf-6028d20e88ba" height="85%" width="85%"/>
+</p>
+<p>
+For the next step, install VC_redist.x86.exe from the installation files, be sure to agree to the license terms and conditions before clicking install. Press close after installation is complete. 
+</p>
+<br />
+
+<p>
+<img src="https://github.com/Joanrpena/osticket-prereqs/assets/131486928/2daa7d69-dcb7-476c-b7b0-0145444f6b10" height="85%" width="85%" />
+</p>
+<p>
+Next, install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the provided installation files. While in the installation wizard, click Agree > Typical install > finally click Install. After installation is finished confirm "Launch the MySQL Configuration Wizard" is highlighted and press Finish.
+</p>
+<img src="https://github.com/Joanrpena/osticket-prereqs/assets/131486928/9a6f9a4d-6369-4af9-b54f-a3a2567123be"
+ height="85%" width="85%" />
+<p>
+  Once the configuration wizard is open press Next > Standard Configuration > Next. Once you arrive at the security options screen you want to configure a secure password for your root account (Default username for root account will be "root"). For the purpose of this lab we will leave "Enable root access from remote machines" unchecked. Click Next > Execute > Finish to close the confirugation wizard.
+</p>
+<br />
+
